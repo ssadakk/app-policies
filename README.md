@@ -8,8 +8,19 @@
 
 ```text
 apps/
+├── holenote/
+│   ├── index.html
+│   ├── privacy.html
+│   └── support.html
 └── tokbaro/
     ├── index.html
     ├── privacy.html
     └── support.html
 ```
+
+## 홀노트 공개 URL
+
+- 개인정보 처리방침: https://ssadakk.github.io/app-policies/apps/holenote/privacy.html
+- 지원: https://ssadakk.github.io/app-policies/apps/holenote/support.html
+
+GitHub Pages는 `main` 브랜치의 루트 디렉터리에서 게시합니다.
