@@ -8,6 +8,10 @@
 
 ```text
 apps/
+├── hermes-personal/
+│   ├── index.html
+│   ├── privacy.html
+│   └── support.html
 ├── holenote/
 │   ├── index.html
 │   ├── privacy.html
@@ -22,5 +26,11 @@ apps/
 
 - 개인정보 처리방침: https://ssadakk.github.io/app-policies/apps/holenote/privacy.html
 - 지원: https://ssadakk.github.io/app-policies/apps/holenote/support.html
+
+## Hermes Personal 공개 URL
+
+- 홈: https://ssadakk.github.io/app-policies/apps/hermes-personal/
+- 개인정보 처리방침: https://ssadakk.github.io/app-policies/apps/hermes-personal/privacy.html
+- 지원: https://ssadakk.github.io/app-policies/apps/hermes-personal/support.html
 
 GitHub Pages는 `main` 브랜치의 루트 디렉터리에서 게시합니다.

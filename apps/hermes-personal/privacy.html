@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Hermes Personal 개인정보 처리방침" />
+    <title>개인정보 처리방침 | Hermes Personal</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="index.html">Hermes Personal</a>
+        <nav aria-label="주요 메뉴">
+          <a href="privacy.html" aria-current="page">개인정보 처리방침</a>
+          <a href="support.html">지원</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <p class="eyebrow">PRIVACY</p>
+        <h1>개인정보 처리방침</h1>
+        <p class="muted">시행일: 2026년 11월 13일 · 적용 대상: Hermes Personal</p>
+      </section>
+
+      <article class="card">
+        <p>
+          Hermes Personal(이하 “클라이언트”)은 개발자 본인(Hamin Joo)이 자신의 Mac에서 사용하는
+          개인용 AI 비서(오픈소스 Hermes Agent)를 본인 Google 계정의 Gmail·Google Drive에
+          연결하기 위해 등록한 Google OAuth 클라이언트입니다. 일반 대중에게 배포하거나
+          판매하는 서비스가 아니며, 개발자 본인 계정만 사용합니다. 이 방침은 클라이언트가
+          Google API로부터 받은 정보를 처리하는 방식을 설명합니다.
+        </p>
+
+        <h2>1. 처리하는 정보</h2>
+        <p>클라이언트는 다음 읽기 전용 권한만 요청합니다.</p>
+        <ul>
+          <li><code>https://www.googleapis.com/auth/gmail.readonly</code> — Gmail 메일 정보 읽기</li>
+          <li><code>https://www.googleapis.com/auth/drive.readonly</code> — Google Drive 파일 정보 읽기</li>
+        </ul>
+        <p>
+          메일 발송·수정·삭제 권한과 Drive 파일 생성·수정·삭제·공유 권한은 요청하지 않습니다.
+          또한 Google 계정 연결을 유지하기 위한 OAuth 토큰을 처리합니다.
+        </p>
+
+        <h2>2. 이용 목적</h2>
+        <p>
+          사용자가 Hermes에게 요청할 때만(예: “오늘 온 메일 요약”, “Drive에서 파일 찾기”)
+          Google API를 호출해 요청 처리에 필요한 메일·파일 정보를 조회하고, 그 결과로
+          응답을 생성합니다.
+        </p>
+        <p>
+          Google 사용자 데이터를 판매, 광고, 마케팅, 신용평가 목적으로 사용하지 않습니다.
+          개발자는 Google 사용자 데이터를 AI 모델 학습에 사용하지 않습니다.
+        </p>
+
+        <h2>3. 제3자 제공 (AI 모델 제공자)</h2>
+        <p class="notice">
+          조회한 메일·파일 내용은 응답 생성을 위해 사용자가 Hermes에 설정한 AI 모델 제공자
+          (예: Anthropic, OpenAI)의 API로 전송될 수 있습니다.
+        </p>
+        <p>
+          전송된 정보에는 해당 AI 모델 제공자의 약관과 개인정보 처리방침이 적용됩니다.
+          개발자가 운영하는 별도 서버는 없으며, 그 밖의 제3자에게 정보를 제공하지 않습니다.
+        </p>
+
+        <h2>4. 보관·삭제</h2>
+        <ul>
+          <li>
+            OAuth 토큰은 사용자 Mac의 Hermes 설정 디렉터리
+            (<code>~/.hermes/google_token.json</code>)에 본인만 읽을 수 있는 권한으로 저장됩니다.
+          </li>
+          <li>대화 기록은 사용자 Mac의 Hermes 로컬 세션 저장소에 남을 수 있습니다.</li>
+        </ul>
+        <p>
+          로컬 토큰 파일을 삭제하고 Google 계정에서 액세스를 삭제하면 클라이언트는 더 이상
+          Google API에 접근할 수 없습니다. 삭제 관련 문의는 아래 이메일로 요청할 수 있습니다.
+        </p>
+
+        <h2>5. Google API Services User Data Policy 준수</h2>
+        <p>
+          Hermes Personal's use and transfer of information received from Google APIs to any other app will adhere to
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+          including the Limited Use requirements.
+        </p>
+
+        <h2>6. 연결 해제 방법</h2>
+        <ol>
+          <li>
+            <a href="https://myaccount.google.com/connections">https://myaccount.google.com/connections</a>
+            에서 <code>Hermes Personal</code>의 액세스를 삭제합니다.
+          </li>
+          <li>사용자 Mac에서 로컬 토큰 파일 <code>~/.hermes/google_token.json</code>을 삭제합니다.</li>
+        </ol>
+
+        <h2>7. 방침의 변경</h2>
+        <p>
+          클라이언트의 권한이나 정보 처리 방식이 변경되면 이 페이지에 변경된 방침을 게시하고
+          시행일을 갱신합니다.
+        </p>
+
+        <h2>8. 운영자 및 문의</h2>
+        <p>운영자: Hamin Joo</p>
+        <p>
+          개인정보 및 삭제 문의:
+          <a href="mailto:ssadakk@gmail.com">ssadakk@gmail.com</a>
+        </p>
+        <p>연결 해제 안내는 <a href="support.html">지원 페이지</a>에서도 확인할 수 있습니다.</p>
+      </article>
+
+      <article class="card" lang="en">
+        <h2>English summary</h2>
+        <p>
+          Hermes Personal is a Google OAuth client registered by the developer (Hamin Joo) to
+          connect a personal AI assistant (the open-source Hermes Agent), running on the
+          developer's own Mac, to the developer's own Gmail and Google Drive. It is not
+          distributed or sold to the public; only the developer's own account uses it.
+        </p>
+        <ul>
+          <li>
+            <strong>Data accessed:</strong> read-only scopes
+            <code>gmail.readonly</code> and <code>drive.readonly</code>. No permission to send,
+            modify, or delete email, or to create, modify, delete, or share Drive files.
+          </li>
+          <li>
+            <strong>Use:</strong> Google APIs are called only when the user asks Hermes for something
+            (e.g. “summarize today's email”, “find a file in Drive”), to retrieve the needed
+            email or file information.
+          </li>
+          <li>
+            <strong>Sharing:</strong> retrieved content may be sent to the AI model provider the user
+            configured in Hermes (e.g. Anthropic, OpenAI) to generate a response.
+            There is no separate server operated by the developer.
+          </li>
+          <li>
+            <strong>Storage:</strong> the OAuth token is stored on the user's Mac at
+            <code>~/.hermes/google_token.json</code> (readable only by the user). Conversation history
+            may remain in Hermes's local session storage on the Mac.
+          </li>
+          <li>
+            <strong>Not used for:</strong> sale, advertising, marketing, or credit assessment.
+            The developer does not use Google user data to train AI models.
+          </li>
+          <li>
+            <strong>Revoking access:</strong> remove <code>Hermes Personal</code> at
+            <a href="https://myaccount.google.com/connections">https://myaccount.google.com/connections</a>
+            and delete the local token file. For deletion requests, email
+            <a href="mailto:ssadakk@gmail.com">ssadakk@gmail.com</a>.
+          </li>
+        </ul>
+        <p class="muted">Effective date: November 13, 2026</p>
+      </article>
+
+      <footer>© 2026 Hermes Personal · <a href="../../index.html">모든 앱 정책</a></footer>
+    </main>
+  </body>
+</html>
